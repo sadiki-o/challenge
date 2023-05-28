@@ -118,13 +118,13 @@ const ETL = () => {
   };
 
   useEffect(() => {
-    if (!currentlyLoadedFile.length) {
+    if (!currentlyLoadedFile?.length) {
       navigate("/");
     }
   }, [currentlyLoadedFile]);
 
   return (
-    currentlyLoadedFile.length !== 0 && (
+    currentlyLoadedFile?.length !== 0 && (
       <>
         <Button
           variant="contained"
@@ -281,7 +281,7 @@ const ETL = () => {
           Saved transformations
         </Typography>
         <Stack my={2} mx={7} direction="row" spacing={1}>
-          {data.length ? (
+          {data?.length ? (
             data.map((el: any) => (
               <ButtonGroup
                 variant="outlined"
