@@ -72,3 +72,10 @@ example custom operation to create new column from other columns: "A = Transacti
 
 build with Django Rest and Django ORM, (couldn't configure SQLAlchemy since there aren't many ressource)
 
+*Note* for the sake of the time the modifications you make are not saved and instead uses the same file stored in the backend every time you use a transformation, which means you get the same result since the file isn't updated each time you apply a transformation
+
+
+test user:
+`username`: `osama`
+`password`: `password`
+
