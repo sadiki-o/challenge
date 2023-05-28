@@ -1,12 +1,3 @@
-## frontend
-
-built with React and MUI
-
-## backend
-
-build with Django Rest and Django ORM, (couldn't configure SQLAlchemy since there aren't many ressource)
-
-
 ### instructions
 
 #### backend
@@ -59,4 +50,25 @@ yarn vite  OR  npm run dev
 ```
 
 
-check the readme of the `frontend` and `backend`
+## frontend
+
+built with React and MUI
+
+### functionalities
+
+- signup
+- signin
+- upload files
+- download uploaded files
+- load file into datagrid
+- apply simple operations on numeric column (fill operation input and drag/drop into column ) \
+*Note* if you drag/drop into datagrid header it wont work
+- create panda syntax in custom transformation and apply it, save it, delete it \
+*Note* for column names with spaces use "_" , example "Transaction ID" -> "Transaction_ID".
+
+example custom operation to create new column from other columns: "A = Transaction_ID * 2" 
+
+## backend
+
+build with Django Rest and Django ORM, (couldn't configure SQLAlchemy since there aren't many ressource)
+
