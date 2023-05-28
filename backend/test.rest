@@ -1,0 +1,23 @@
+POST http://localhost:8000/api/signup/
+Content-Type: application/json
+
+{"username": "osama", "password": "password", "email": "s@gmail.com"}
+
+###
+
+POST http://localhost:8000/api/signin/
+Content-Type: application/json
+
+{"username": "osama", "password": "password"}
+
+###
+
+GET http://127.0.0.1:8000/api/profile/ 
+Content-Type: application/json 
+Authorization: Token dcee28065fe58ebad320bc1a9ea60f0f4a2c1666
+
+###
+
+POST http://127.0.0.1:8000/api/signout/
+Content-Type: application/json 
+Authorization: Token 38e1e6615e6b9f354a0dd7ffcef0e84380f3fd66
