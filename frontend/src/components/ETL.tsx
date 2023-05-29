@@ -53,6 +53,7 @@ const ETL = () => {
       .then((res) => {
         toast.success("Success");
         setOperation("");
+        queryClient.invalidateQueries({ queryKey: ["transformations"] });
       })
       .catch((err) => {
         console.log("error");
